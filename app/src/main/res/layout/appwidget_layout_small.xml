@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appwidget_mainview_small"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/appwidget_padding"
+    tools:layout_height="80dp"
+    tools:layout_width="120dp">
+
+    <ImageView
+        android:id="@+id/appwidget_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:src="@drawable/appwidget_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/command_label_textview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingBottom="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/appwidget_command_label"
+                android:textSize="18sp"
+                tools:text="RESTART" />
+
+            <TextView
+                android:id="@+id/host_textview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_rounded_bottom"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/appwidget_host_label"
+                android:textSize="12sp"
+                tools:text="pi" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/appwidget_working_pb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="0dp"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/appwidget_background_loading"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="0dp">
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@null"
+            android:padding="4dp" />
+    </LinearLayout>
+</RelativeLayout>

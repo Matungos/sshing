@@ -1,0 +1,4 @@
+-keep class com.hierynomus.sshj.** { *; }
+-keep interface com.hierynomus.sshj.** { *; }
+-keep class org.bouncycastle.** { *; }
+-keep interface org.bouncycastle.** { *; }

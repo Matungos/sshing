@@ -1,0 +1,66 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+apply plugin: 'com.github.ben-manes.versions'
+
+buildscript {
+    ext {
+        release = [
+                versionName: "4.0.0",
+                versionCode: 10
+        ]
+
+        setup = [
+                compileSdk: 30,
+                minSdk    : 21,
+                targetSdk : 30
+        ]
+
+        versions = [
+                kotlin: "1.5.10"
+        ]
+    }
+
+    repositories {
+        google()
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.1'
+
+        classpath 'com.google.gms:google-services:4.3.8'
+
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.7.0'
+
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.39.0'
+
+        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5'
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
+    }
+}
+
+dependencyUpdates.resolutionStrategy = {
+    componentSelection { rules ->
+        rules.all { ComponentSelection selection ->
+            boolean rejected = ['alpha', 'beta', 'rc', 'cr', 'm'].any { qualifier ->
+                selection.candidate.version ==~ /(?i).*[.-]${qualifier}[.\d-]*.*/
+            }
+            if (rejected) {
+                println selection.candidate.module + ' ' + selection.candidate.version
+                selection.reject('Release candidate')
+            }
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

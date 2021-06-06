@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.9"
+    android:background="@drawable/appwidget_background_undefined"
+    android:orientation="vertical"
+    android:padding="@dimen/appwidget_padding">
+
+    <ImageButton
+        android:id="@+id/config"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:alpha="0.2"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_settings_24dp" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/appwidget_horizontal_margin"
+        android:paddingRight="@dimen/appwidget_horizontal_margin"
+        android:text="@string/appwidget_config_message"
+        android:textColor="@color/appwidget_primary_text_color" />
+
+</RelativeLayout>

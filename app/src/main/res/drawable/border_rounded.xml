@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="1dp"
+        android:color="#369" />
+
+    <solid android:color="@color/host_background_color" />
+
+    <corners android:radius="@dimen/appwidget_corner_radius" />
+</shape>

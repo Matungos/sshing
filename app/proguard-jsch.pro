@@ -1,0 +1,6 @@
+-keep class com.jcraft.jsch.jce.*
+-keep class * extends com.jcraft.jsch.KeyExchange
+-keep class com.jcraft.jsch.**
+-keep interface com.jcraft.jsch.**
+-dontwarn org.ietf.jgss.*
+-dontwarn com.jcraft.jzlib.ZStream

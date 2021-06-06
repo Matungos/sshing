@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="font_family">sans-serif-light</string>
+
+    <string name="font_family_thin">sans-serif-thin</string>
+
+    <string name="font_family_medium">sans-serif</string>
+
+    <string name="font_family_condensed">sans-serif-condensed</string>
+
+</resources>

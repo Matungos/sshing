@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/home_dest">
+
+    <fragment
+        android:id="@+id/home_dest"
+        android:name="com.matungos.sshing.presentation.commandlist.CommandListFragment"
+        android:label="@string/command_list_title"
+        tools:layout="@layout/command_list_fragment">
+        <action
+            android:id="@+id/action_home_dest_to_add_command_dest"
+            app:destination="@id/add_command_dest" />
+        <action
+            android:id="@+id/action_home_dest_to_settings_dest"
+            app:destination="@id/settings_dest" />
+        <action
+            android:id="@+id/action_home_dest_to_host_list_dest"
+            app:destination="@id/host_list_dest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings_dest"
+        android:name="com.matungos.sshing.presentation.settings.SettingsFragment"
+        android:label="@string/settings_title"
+        tools:layout="@layout/settings_fragment" />
+
+    <fragment
+        android:id="@+id/add_command_dest"
+        android:name="com.matungos.sshing.presentation.addcommand.AddCommandFragment"
+        android:label="@string/add_command_title"
+        tools:layout="@layout/add_command_fragment">
+        <argument
+            android:name="command_id"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_add_command_dest_to_add_host_dest"
+            app:destination="@id/add_host_dest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_host_dest"
+        android:name="com.matungos.sshing.presentation.addhost.AddHostFragment"
+        android:label="@string/add_host_title"
+        tools:layout="@layout/add_host_fragment">
+        <argument
+            android:name="host_id"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/host_list_dest"
+        android:name="com.matungos.sshing.presentation.hostlist.HostListFragment"
+        android:label="@string/host_list_title"
+        tools:layout="@layout/host_list_fragment">
+        <action
+            android:id="@+id/action_host_list_dest_to_add_host_dest"
+            app:destination="@id/add_host_dest" />
+    </fragment>
+
+</navigation>

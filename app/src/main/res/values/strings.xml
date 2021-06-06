@@ -1,0 +1,86 @@
+<resources>
+
+    <string name="app_name">SSHing</string>
+
+    <string name="action_donate_app">donate version</string>
+    <string name="action_hosts">hosts</string>
+    <string name="action_done">done</string>
+    <string name="action_settings">settings</string>
+    <string name="action_edit">edit</string>
+    <string name="action_duplicate">duplicate</string>
+    <string name="action_delete">delete</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+
+    <string name="host_list_empty_message">add your first host using the button below</string>
+    <string name="command_list_empty_message">add your first command using the button below</string>
+
+    <string name="command_list_title">commands</string>
+
+    <!-- Add Command -->
+    <string name="add_command_title">add command</string>
+    <string name="add_command_edition_title">edit command</string>
+    <string name="add_command_label_hint">label</string>
+    <string name="add_command_string_hint">command</string>
+    <string name="add_command_select_host_text">select host</string>
+    <string name="add_command_select_color_text">select color</string>
+    <string name="add_command_critical_text">ask for confirmation before execute</string>
+    <string name="add_command_empty_response_text">do not notify empty responses</string>
+
+    <string name="command_card_transition_name">command_card_%1$s</string>
+    <string name="add_command_detail_transition_name">add_command_detail</string>
+    <string name="add_command_fab_transition_name">add_command_fab</string>
+
+    <string name="add_host_title">add host</string>
+    <string name="add_host_edition_title">edit host</string>
+    <string name="add_host_label_hint">label (rpi, server x, …)</string>
+    <string name="add_host_address_hint">ip or domain</string>
+    <string name="add_host_port_hint">port</string>
+
+    <string name="add_host_identity_text">identity</string>
+    <string name="add_host_user_hint">user</string>
+    <string name="add_host_password_hint">password</string>
+    <string name="add_host_key_hint">key (optional)</string>
+    <string name="add_host_button_select">SELECT</string>
+    <string name="add_host_key_passphrase_hint">key passphrase (optional)</string>
+    <string name="add_host_invalid_key">invalid key</string>
+
+    <string name="host_list_title">hosts</string>
+
+    <string name="host_card_transition_name">host_card_%1$s</string>
+    <string name="add_host_detail_transition_name">add_host_detail</string>
+    <string name="add_host_fab_transition_name">add_host_fab</string>
+
+    <!-- Settings strings -->
+    <string name="settings_title">settings</string>
+    <string name="settings_import_export_desc">import / export your hosts, identities and commands.</string>
+    <string name="settings_import_btn">import</string>
+    <string name="settings_export_btn">export</string>
+    <string name="settings_export_password_and_passphrase">export passwords and passphrases</string>
+    <string name="settings_file_created_message_ending">created</string>
+    <string name="settings_hosts_created_message">hosts created</string>
+    <string name="settings_hosts_updated_message">hosts updated</string>
+    <string name="settings_commands_created_message">commands created</string>
+    <string name="settings_commands_updated_message">commands updated</string>
+
+    <string name="alert_confirmation_message">Execute command \"%s\" ?</string>
+
+    <string name="alert_donate_title">Donate</string>
+    <string name="alert_donate_message">Download the donate version?</string>
+
+    <string name="command_executing_message">executing…</string>
+
+    <string name="empty_response_message">empty response</string>
+
+    <string name="empty_form_field_error">fill out this field</string>
+
+    <string name="delete_host_error">delete linked commands first</string>
+
+    <string name="colors">Colors</string>
+
+    <string name="appwidget_config_message">tap here to launch setup</string>
+    <string name="appwidget_command_list_empty_message">add your first command using the main app</string>
+    <string name="appwidget_config_title">choose a command</string>
+
+</resources>

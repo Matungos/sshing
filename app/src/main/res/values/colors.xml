@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#2e9af1</color>
+    <color name="colorAccentDark">#0061a4</color>
+    <color name="colorAlert">#fff11e40</color>
+
+    <color name="textColorPrimary">#F0F0F0</color>
+    <color name="textColorSecondary">#C4C4C4</color>
+
+    <color name="command_background_color">#424242</color>
+
+    <color name="host_background_color">#313131</color>
+
+    <!-- AppWidget -->
+    <color name="appwidget_background">@color/colorPrimary</color>
+    <color name="appwidget_primary_text_color">#ffffff</color>
+    <color name="appwidget_command_label">#ffffff</color>
+    <color name="appwidget_host_label">#ffffff</color>
+
+    <color name="appwidget_background_loading">#96212121</color>
+
+</resources>
